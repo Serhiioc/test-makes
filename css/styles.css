@@ -448,7 +448,6 @@ p {
 
 .contacts__form {
   max-width: 420px;
-  height: 500px;
   width: 100%;
   padding: 48px 56px;
   border-radius: 32px;
@@ -501,6 +500,8 @@ p {
 .form__submit {
   max-width: 280px;
   width: 100%;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .form__submit:hover,
@@ -571,4 +572,46 @@ p {
   margin-top: 16px;
   font-size: 13px;
   color: var(--color-secondary-light);
+}
+
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #4a4a4a95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  padding: 42px 90px;
+  max-width: 723px;
+  width: 100%;
+  border-radius: 48px;
+  background-color: var(--color-primary-dark);
+}
+
+.modal__btn {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal__title {
+  color: var(--color-background-primary);
+  text-align: center;
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.modal__form .form__input {
+  margin-bottom: 24px;
 }
