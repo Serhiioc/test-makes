@@ -601,6 +601,7 @@ p {
   right: 42px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -614,4 +615,11 @@ p {
 
 .modal__form .form__input {
   margin-bottom: 24px;
+}
+
+.modal__backdrop.hidden {
+  opacity: 0;
+  visibility: hidden;
+  appearance: none;
+  pointer-events: none;
 }
