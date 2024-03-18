@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -182,41 +186,44 @@
             <h2 class="section-title services__title">
               Наші <span>процедури</span>
             </h2>
-            <div class="services__wrap">
-              <button class="carousel-button">
+            <div class="services__swiper swiper-container">
+              <button class="carousel__button carousel__button-prev">
                 <svg width="20px" height="20px">
                   <use href="./img/icons.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <div class="services__inner">
-                <article class="services__article">
-                  <img
-                    class="services__img"
-                    src="./img/faces-mask.jpg"
-                    alt="mask for face"
-                  />
-                  <p class="services__desc"><span>Маски для обличчя</span></p>
-                </article>
-                <article class="services__article">
-                  <img
-                    class="services__img"
-                    src="./img/injection.jpg"
-                    alt="injection for face"
-                  />
-                  <p class="services__desc">
-                    <span>Ін'єкції для обличчя</span>
-                  </p>
-                </article>
-                <article class="services__article">
-                  <img
-                    class="services__img"
-                    src="./img/cleaning-face.jpg"
-                    alt="clean face"
-                  />
-                  <p class="services__desc"><span>Очищення обличчя</span></p>
-                </article>
+              <div class="services__wrap swiper">
+                <div class="services__inner">
+                  <article class="services__article swiper-slide">
+                    <img
+                      class="services__img"
+                      src="./img/faces-mask.jpg"
+                      alt="mask for face"
+                    />
+                    <p class="services__desc"><span>Маски для обличчя</span></p>
+                  </article>
+                  <article class="services__article swiper-slide">
+                    <img
+                      class="services__img"
+                      src="./img/injection.jpg"
+                      alt="injection for face"
+                    />
+                    <p class="services__desc">
+                      <span>Ін'єкції для обличчя</span>
+                    </p>
+                  </article>
+                  <article class="services__article swiper-slide">
+                    <img
+                      class="services__img"
+                      src="./img/cleaning-face.jpg"
+                      alt="clean face"
+                    />
+                    <p class="services__desc"><span>Очищення обличчя</span></p>
+                  </article>
+                </div>
               </div>
-              <button class="carousel-button next">
+
+              <button class="carousel__button carousel__button-next">
                 <svg width="20px" height="20px">
                   <use href="./img/icons.svg#icon-arrow"></use>
                 </svg>
@@ -408,6 +415,8 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

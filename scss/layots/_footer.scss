@@ -1,0 +1,49 @@
+.footer {
+  font-size: 16px;
+  color: var(--color-background-primary);
+  background-color: var(--color-primary-dark);
+  padding-top: 56px;
+  margin-top: 100px;
+}
+
+.footer li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo,
+.footer__nav,
+.footer__address {
+  flex-grow: 1;
+}
+
+.footer__nav-list .nav__item {
+  font-size: 16px;
+}
+
+.footer a:hover,
+.footer a:focus {
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+.footer__address-list {
+  margin-bottom: 16px;
+}
+
+.footer__social .social__list {
+  gap: 24px;
+}
+
+.footer__social .social__link {
+  fill: var(--color-background-primary);
+}
+
+.footer__info-copyright {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--color-secondary-light);
+}

@@ -1,0 +1,9 @@
+.section-title {
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+
+  & span {
+    color: var(--color-primary-light);
+  }
+}

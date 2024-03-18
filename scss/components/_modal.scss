@@ -1,0 +1,52 @@
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #4a4a4a95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    appearance: none;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  padding: 42px 90px;
+  max-width: 723px;
+  width: 100%;
+  border-radius: 48px;
+  background-color: var(--color-primary-dark);
+
+  &__btn {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    color: var(--color-background-primary);
+    text-align: center;
+    font-family: Play;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  &__form .form__input {
+    margin-bottom: 24px;
+  }
+}

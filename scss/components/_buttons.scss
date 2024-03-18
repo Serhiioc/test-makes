@@ -1,0 +1,16 @@
+.btn {
+  width: 220px;
+  height: 55px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 32px;
+  background-color: var(--color-primary-light);
+  box-shadow: none;
+  border: 2px solid var(--color-primary-light);
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+  }
+}
