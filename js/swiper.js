@@ -1,14 +1,22 @@
 const swiper = new Swiper('.swiper-container', {
   loop: true,
-  slidesPerView: 3,
-
-  // If we need pagination
+  slidesPerView: 1,
+  spaceBetween: 16,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+  },
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+    el: '.pagination',
+    bulletClass: 'pagination__button',
+    bulletActiveClass: 'pagination__button--active',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.carousel__button-next',
     prevEl: '.carousel__button-prev',
